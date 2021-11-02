@@ -10,8 +10,8 @@
         <p class="flex fs-2 text-dark-accent-2">$</p>
         <input
           class="flex bill-input fs-2 text-dark bold"
-          v-model="bill"
-          placeholder="142.55"
+          v-model="cost"
+          placeholder="0"
         />
       </div>
       <p class="flex fs-4 bold text-dark-accent-1">Select Tip %</p>
@@ -23,25 +23,32 @@
         <button class="fs-2 bg-dark text-light bold">25%</button>
         <button class="fs-2 bg-dark text-light bold">Custom</button>
       </div>
-      
-        <p class="flex fs-4 bold text-dark-accent-1">Number of People</p>
-        <div class="flex num-people bg-light-accent-2">
-          <p class="flex fs-2 text-dark-accent-2">!</p>
+
+      <p class="flex fs-4 bold text-dark-accent-1">Number of People</p>
+      <div class="flex num-people bg-light-accent-2">
+        <p class="flex fs-2 text-dark-accent-2">!</p>
         <input
           class="flex people-input fs-2 text-dark bold"
           v-model="numPeople"
-          placeholder="5"
+          placeholder="0"
         />
       </div>
       <div class="tip-total">
         <div>
           <div class="flex tip-amount">
-            <p class="fs-4 text-light bold flex tip-amount-text">Tip Amount <br><span class="fs-5 text-dark-accent-2 bold">/ person</span>
+            <p class="fs-4 text-light bold flex tip-amount-text">
+              Tip Amount <br /><span class="fs-5 text-dark-accent-2 bold"
+                >/ person</span
+              >
             </p>
             <p class="fs-1 text-primary bold flex-inline">{{ 4.27 }}</p>
           </div>
           <div class="flex tip-amount">
-            <p class="fs-4 text-light bold flex tip-amount-text">Total<br><span class="fs-5 text-dark-accent-2 bold">/ person</span></p>
+            <p class="fs-4 text-light bold flex tip-amount-text">
+              Total<br /><span class="fs-5 text-dark-accent-2 bold"
+                >/ person</span
+              >
+            </p>
             <p class="fs-1 text-primary bold flex-inline">{{ 32.79 }}</p>
           </div>
         </div>
