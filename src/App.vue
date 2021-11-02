@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TipCalculator />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TipCalculator from './components/calc.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TipCalculator
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Space Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 375px) {
+  .calculator {
+    width: 100%;
+  }
+
 }
 </style>
